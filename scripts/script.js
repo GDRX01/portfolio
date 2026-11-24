@@ -2,7 +2,7 @@ const PROFILE = {
   name:         { ru: "Жежу Пётр", en: "Zhezhu Peter" },
   role:         { ru: "Веб-дизайнер (стажёр)", en: "Web Designer (Intern)" },
   birthDate:    "2007-03-25",
-  city:         { ru: "Москва", en: "Moscow" },
+  city:         { ru: "Москва, Сергиев Посад", en: "Moscow, Sergiev Posad" },
   timeZone:     "Europe/Moscow",
   email:        "petr.zh@gmail.com",
   phone:        "+7 916 746 63 36",
