@@ -87,9 +87,9 @@ const PROJECTS = [
 ];
 
 const QUOTES = [
-  { ru: "Хороший дизайн — это как можно меньше дизайна.", en: "Good design is as little design as possible.", by: "Dieter Rams" },
-  { ru: "Дизайн — это не только то, как вещь выглядит. Дизайн — это то, как она работает.", en: "Design is not just what it looks like and feels like. Design is how it works.", by: "Steve Jobs" },
-  { ru: "Детали — это не просто детали. Они создают дизайн.", en: "The details are not the details. They make the design.", by: "Charles Eames" },
+  { ru: "Хороший дизайн - это как можно меньше дизайна.", en: "Good design is as little design as possible.", by: "Dieter Rams" },
+  { ru: "Дизайн - это не только то, как вещь выглядит. Дизайн - это то, как она работает.", en: "Design is not just what it looks like and feels like. Design is how it works.", by: "Steve Jobs" },
+  { ru: "Детали - это не просто детали. Они создают дизайн.", en: "The details are not the details. They make the design.", by: "Charles Eames" },
   { ru: "Совершенство достигается не тогда, когда нечего добавить, а когда нечего убрать.", en: "Perfection is achieved when there is nothing left to take away.", by: "Antoine de Saint-Exupéry" }
 ];
 
@@ -194,7 +194,7 @@ function clearErrors() {
 function render() {
   const U = UI[lang], name = t(PROFILE.name), [first, ...rest] = name.split(" "), last = rest.join(" ");
   document.documentElement.lang = lang;
-  document.title = `${name} — ${t(PROFILE.role)}`;
+  document.title = `${name} - ${t(PROFILE.role)}`;
   $("meta[name=description]").content = t(PROFILE.statement);
   $$("[data-k]").forEach(e => e.textContent = U[e.dataset.k]);
 
