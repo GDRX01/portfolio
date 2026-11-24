@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Портфолио веб-дизайнера-стажёра">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='black'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <noscript><style>.loader{display:none}</style></noscript>
+    <script defer src="./scripts/script.js"></script>
+</head>
+<body>
+<div class="loader" id="loader" aria-hidden="true"><span></span></div>
+
+<header class="top">
+  <a class="logo" id="logo" href="#top"></a>
+  <nav aria-label="Navigation">
+    <a href="#works" data-k="navWorks"></a>
+    <a href="#about" data-k="navAbout"></a>
+    <a href="#contact" data-k="navContact"></a>
+  </nav>
+  <div class="right">
+    <button class="btn ghost" id="lang" type="button"></button>
+    <a class="btn" href="#contact" data-k="contactBtn"></a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <h1><span id="name"></span></h1>
+    <div class="meta"><div id="mRole"></div><div id="mCity"></div><div id="mAvail"></div></div>
+  </div>
+  <p class="lead" id="lead"></p>
+
+  <section id="works">
+    <h2 data-k="worksTitle"></h2>
+    <p class="sub" data-k="worksSub"></p>
+    <div class="filters" id="filters" role="group"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="about">
+    <div class="two">
+      <h2 data-k="aboutTitle"></h2>
+      <div><p class="big" id="aboutText"></p><dl id="facts"></dl></div>
+    </div>
+    <div class="block"><h3 data-k="skillsTitle"></h3><div class="skills" id="skills"></div></div>
+    <div class="block"><h3 data-k="expTitle"></h3><div class="exp" id="exp"></div></div>
+  </section>
+
+  <section id="contact">
+    <div class="two">
+      <div>
+        <h2 data-k="contactTitle"></h2>
+        <p class="sub" id="goal" style="text-align:left;margin-left:0;font-size:1rem;color:var(--ink)"></p>
+        <a class="mail" id="mail"></a>
+        <a class="phone" id="phone"></a>
+        <a class="phone" id="github" target="_blank" rel="noopener"></a>
+      </div>
+      <div>
+        <form id="form" novalidate>
+          <label>
+            <span data-k="fName"></span>
+            <input name="name" autocomplete="name" aria-describedby="e-name">
+          </label>
+          <span class="err" id="e-name" role="alert"></span>
+          <label>
+            <span data-k="fEmail"></span>
+            <input name="email" type="email" autocomplete="email" aria-describedby="e-email">
+          </label>
+          <span class="err" id="e-email" role="alert"></span>
+          <label>
+            <span data-k="fMsg"></span>
+            <textarea name="message" aria-describedby="e-message"></textarea>
+          </label>
+          <span class="err" id="e-message" role="alert"></span>
+          <button class="btn" id="send" type="submit" data-k="send"></button>
+          <p id="status" role="status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div><span data-k="quote"></span><q id="quote"></q><span id="quoteBy"></span></div>
+  <div id="copy"></div>
+</footer>
+
+</body>
+</html>
